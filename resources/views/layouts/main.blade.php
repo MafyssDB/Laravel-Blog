@@ -15,12 +15,6 @@
                     <li class="menu__item">
                         <a  class="menu__link link" href="{{route('main.index')}}">Главная</a>
                     </li>
-                    <li class="menu__item">
-                        <a  class="menu__link link" href="">Статьи</a>
-                    </li>
-                    <li class="menu__item">
-                        <a  class="menu__link link" href="">Обо мне</a>
-                    </li>
                 </ul>
             </nav>
             <div class="profile">

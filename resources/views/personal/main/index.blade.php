@@ -17,7 +17,8 @@
                     <p class="personal__name">{{ $user->name }}</p>
                 </div>
                 <div class="personal__item">
-                    <div class="personal__img" style="background-image: url({{ asset('storage/' . $user->avatar) }})"></div>
+{{--                    <div class="personal__img" style="background-image: url({{ asset('storage/' . $user->avatar) }})"></div>--}}
+                    <div class="personal__img" style="background-image: url({{ asset($user->avatar) }})"></div>
                 </div>
             </div>
             <form class="form" action="{{route('personal.main.update', $user->id)}}" method="POST" enctype="multipart/form-data">

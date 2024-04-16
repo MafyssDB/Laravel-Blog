@@ -12,7 +12,8 @@
 					</div>
 				</div>
 				<div class="article__body editor">
-                 <div class="article__photo" style="background-image: url({{ asset('storage/' . $post->image) }})"></div>
+{{--                 <div class="article__photo" style="background-image: url({{ asset('storage/' . $post->image) }})"></div>--}}
+                 <div class="article__photo" style="background-image: url({{ asset($post->image) }})"></div>
 					<p>{!! $post->content !!}</p>
 				</div>
 				<div class="subsection">

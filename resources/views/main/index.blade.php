@@ -10,7 +10,8 @@
                 <div class="popular-post__item">
                     <div class="card">
                         <a href="{{ route('post.show', $likedPost->id) }}">
-                            <div class="card__img" style="background-image: url({{ asset('storage/' . $likedPost->image) }})"></div>
+{{--                            <div class="card__img" style="background-image: url({{ asset('storage/' . $likedPost->image) }})"></div>--}}
+                            <div class="card__img" style="background-image: url({{ asset($likedPost->image) }})"></div>
                             <div class="card__overlay">
                                 <div class="card__title">{{ $likedPost->title }}</div>
                                 <div class="card__date">{{ $likedPost->created_at }}</div>
@@ -27,7 +28,8 @@
         <div class="section__inner container">
             <div class="post">
                 <div class="post__top">
-                    <div class="post__photo" style="background-image: url({{ asset('storage/' . $post->image) }})"></div>
+                    <div class="post__photo" style="background-image: url({{ asset($post->image) }})"></div>
+{{--                    <div class="post__photo" style="background-image: url({{ asset('storage/' . $post->image) }})"></div>--}}
                 </div>
                 <div class="post__body">
                     <div class="post__title">{{ $post->title }}</div>
